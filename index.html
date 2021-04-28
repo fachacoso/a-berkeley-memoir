@@ -1,0 +1,61 @@
+<!--
+Name: Franco Achacoso
+Date: 04.19.21
+
+This is the index.html page for my website that acts as a sort-of scrapbook of my time in college.
+
+<!--------------------------------------*\
+  # Table of Contents
+	1. Cover
+		1. Background
+		2. Foreground
+	2. Content
+		1. Freshman Year
+		2. Sophomore Year
+		3. Junior Year
+		4. Senior Year
+\*-------------------------------------->
+<html>
+	<head>
+		<title>Fast Times at UC Berkeley</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="cover">
+		<img src="assets/images/background.png" id='background'>
+		<img src="assets/images/foreground.png" id='foreground'>
+	</div>
+
+	<div id="content">
+		<div class="grid-container">
+			<a href = "freshman.html" > 
+				<div class="grid-item" id="freshman">
+					<img src="assets/images/cover2.jpg">
+					<div class="grid-overlay"></div>
+					<div class="grid-title">Freshman<br>Year</div>
+				</div>
+			</a>
+			<a href = "sophomore.html" class="grid-item">
+				<img src="assets/images/cover1.jpg">
+				<div class="grid-overlay"></div>
+				<div class="grid-title">Sophomore<br>Year</div>
+			</a>
+			<a href = "junior.html" class="grid-item">
+				<img src="assets/images/cover1.jpg">
+				<div class="grid-overlay"></div>
+				<div class="grid-title">Junior<br>Year</div>
+			</a>
+			<a href = "junior.html" class="grid-item">
+				<img src="assets/images/cover2.jpg">
+				<div class="grid-overlay"></div>
+				<div class="grid-title">Senior<br>Year</div>
+			</a>
+		</div>
+	</div>
+	<script src="assets/scripts/script.js"> </script>
+</body>
+
+
+</html>

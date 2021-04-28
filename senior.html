@@ -1,0 +1,282 @@
+<!--------------------------------------*\
+  # Table of Contents
+	1. Cover
+	2. Content Container
+		1. Button container
+			1. Memories Button
+			2. Songs Button
+		2. Memories Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Memory Items
+				1. Item Container (x5)
+					1. Text Container
+					2. Media Container
+						1. Image carousel
+							1. Carousel Nav
+							2. Carousel Content
+							3. Carousel Indicator
+		3. Songs Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Songs Items
+				1. Item Container (x5)
+					1. Media Container
+					2. Text Container
+\*-------------------------------------->
+
+<html>
+	<head>
+		<title>Freshman Year</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/years.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="cover">
+		<img src="assets/images/cover2.jpg">
+	</div>
+	<div id="content-container">
+		<div class="content" id="button-container">
+			<button id="button-memories">Memories</button>
+			<button id="button-songs">Songs</button>
+		</div>
+		<div class="content hidden" id="memories-container" >
+			<div class="overlay-container">
+				<div class="overlay" id="memories-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#memory5">#5: Pinterest</a></li>
+						<li class="4"><a href="#memory4">#4: Meet the Pam</a></li>
+						<li class="3"><a href="#memory3">#3: Dorm Life</a></li>
+						<li class="2"><a href="#memory2">#2: Avalon Club</a></li>
+						<li class="1"><a href="#memory1">#1: Senior Weekend</a></li>
+					</ul>
+					<button id="memories-exit"> X </button>
+				</div>
+			</div>
+			<div id="memory-items">
+				<div class="item-container" id="memory5">
+					<div class="text-container">
+						<h2>Pinterest<span>05</span></h2>
+						<p> 
+							As the baby freshman I was, the thoughts of post-grad and a full-time career were practically non-existent.  It didn't help that at the time, I didn't know what I wanted to study nor what I wanted to do in the future.  
+							</br></br>
+							Come's in one of my upperclassmen friends who invited me to their company's headquarters in San Francisco.  Picked me up, crossed the bridge,  and got to see the insanity of the place he worked at.  The only exposure I had to jobs were the desk jobs my parents held (which I will always be grateful for), but this was just unbelievable.  Food bars, stylish and modern furniture, comfortable work spaces, people constantly interacting with one another, and a beautiful view at the rooftop.  Such simple thing now that I'm looking back, but is all that it took for me to become determined to work at place like there and eventually kick-start my professional journey as a little freshman.
+						</p>
+					</div>
+					<div class="media-container">
+						<img class= "carousel-img active" src="assets/images/freshman/5/1.jpg">
+					</div>
+				</div>
+				<div class="item-container" id="memory4">
+					<div class="text-container">
+						<h2>Meet the Pam<span>04</span></h2>
+						<p> 
+							The first group in Berkeley I've felt really close to.  
+							</br></br>
+							My pam (short for "pamilya" which means family in Tagalog), is a big/little kind of thing.  When I became a little in my pam back in my first semester in Cal, I got the chance to meet a bunch of my bigs, all of which were upperclassmen that were all insanely amazing.  Whether it be in regards to the work they do, what they've accomplished, places they've been, the wisdom they had, or just how, for lack of a better word, cool they were. 
+							</br></br>
+							From driving me out to their favorite food places outside Berkeley, to bringing me food when I was sick.  From teaching me how to apply for EBT to housing me when I was kicked out of the dorms once May hit.  From being some of my first friends in Berkeley to friends I hope to have for the rest of my life.  Much love.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/freshman/4/1.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/4/2.jpeg">
+								<img class= "carousel-img" src="assets/images/freshman/4/3.png">
+								<img class= "carousel-img" src="assets/images/freshman/4/4.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/4/5.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/4/6.png">
+								<img class= "carousel-img" src="assets/images/freshman/4/7.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory3">
+					<div class="text-container">
+						<h2>Dorm Life<span>03</span></h2>
+						<p> 
+							Lights off, headset on—times in Freeborn 811.
+							</br></br>
+							With a TV under the loft, RGB lightbulb for the ambience, a view of the sun setting from the topmost floor facing the hills, and two semi-cool roommates (just kidding, love you guys), my time at the dorm was always laid-back fun.  Studying, listening to music, watching weekly shows together, getting an occasional #1 Victory Royale—just a blast of nostalgia.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/freshman/3/1.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/3/2.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/3/3.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/3/4.png">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="item-container" id="memory2">
+					<div class="text-container">
+						<h2>Avalon Club<span>02</span></h2>
+						<p> 
+							Every week I'd go to a club's weekly game nights to have fun and meet new people.  Eventually we came across a game called Avalon, a social deduction game involving figuring out who out of the group is evil.  Me and some people I met there enjoyed playing this game so much that we'd eventually keep on playing outside the club after game night was over, often up until questionable hours of the night, thus creating "Avalon Club".  We'd all see each other outside game nights, not just to play Avalon, but to play other board games, playing Super Smash, eating out, and hanging out.  All the good friends I've made and the good memories with those people all started off with Avalon.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/freshman/2/1.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/2/2.png">
+								<img class= "carousel-img" src="assets/images/freshman/2/3.png">
+								<img class= "carousel-img" src="assets/images/freshman/2/4.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/2/5.png">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory1">
+					<div class="text-container">
+						<h2> Senior Weekend<span>01</span></h2>
+						<p> 
+							As a senior in high school who just got accepted into UC Berkeley, I was dead set on going there.  But alongside the determination was a huge amount of insecurity, especially being the first in my family to go to a 4-year university.  Concerns in cost of attendance, keeping up with the academic rigor of the "#1 public university", and ability to actually move to a completely new area from a place I've lived my whole life.  Then came an invitation from an outreaching organization from Berkeley who bought me a ticket to come visit the campus, interact with actual students, and come see what life would be with UC Berkeley as my new home.  It was because of the experience I had during senior weekend that I SIR'ed.
+							</br></br>
+							Fast forward a year later, I had an opportunity to give people who were in the exact same shoes as me the year before that same experience.  We showed them around campus, took them to our favorite places to eat, housed them as we stayed up late playing random board games(Avalon mostly) and talking about things both stupid and deep, and really just give them the confidence to feel like they can succeed in UC Berkeley.
+							</br></br>
+							Much love to my fellow mentors Lauren and CJ, as well as love to the baby bears Floriedaine, Ryan, and Avi.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/freshman/1/1.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/1/2.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/1/3.jpg">
+								<img class= "carousel-img" src="assets/images/freshman/1/4.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="content hidden" id="songs-container">
+			<div class="overlay-container">
+				<div class="overlay" id="songs-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#song5">#5: I Wish I Missed My Ex</a></li>
+						<li class="4"><a href="#song4">#4: Make It Better</a></li>
+						<li class="3"><a href="#song3">#3: Needy</a></li>
+						<li class="2"><a href="#song2">#2: Midsummer Madness</a></li>
+						<li class="1"><a href="#song1">#1: Love Affair</a></li>
+					</ul>
+					<button id="songs-exit"> X </button>
+				</div>
+			</div>
+			<div id="song-items">
+				<div class="item-container" id="song5">
+					<div class="media-container">
+						<img src="assets/images/freshman/songs/5.jpg">
+					</div>
+					<div class="text-container">
+						<h2>I Wish I Missed My Ex<span>05</span></h2>
+						<h3>Mahalia</h3>
+						<p> 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song4">
+					<div class="media-container">
+						<img src="assets/images/freshman/songs/4.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Make It Better<span>04</span></h2>
+						<h3>Anderson .Paak ft Smokey Robinson</h3>
+						<p> 
+							  
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song3">
+					<div class="media-container">
+						<img src="assets/images/freshman/songs/3.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Needy<span>03</span></h2>
+						<h3>Ariana Grande</h3>
+						<p> 
+							 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song2">
+					<div class="media-container">
+						<img src="assets/images/freshman/songs/2.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Midsummer Madness<span>02</span></h2>
+						<h3>88rising</h3>
+						<p> 
+							
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song1">
+					<div class="media-container">
+						<img src="assets/images/freshman/songs/1.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Love Affair<span>01</span></h2>
+						<h3>Umi</h3>
+						<p> 
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="assets/scripts/years.js"> </script>
+<script src="assets/scripts/carousel.js"> </script>
+
+</html>
+

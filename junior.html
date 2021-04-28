@@ -1,0 +1,300 @@
+<!--------------------------------------*\
+  # Table of Contents
+	1. Cover
+	2. Content Container
+		1. Button container
+			1. Memories Button
+			2. Songs Button
+		2. Memories Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Memory Items
+				1. Item Container (x5)
+					1. Text Container
+					2. Media Container
+						1. Image carousel
+							1. Carousel Nav
+							2. Carousel Content
+							3. Carousel Indicator
+		3. Songs Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Songs Items
+				1. Item Container (x5)
+					1. Media Container
+					2. Text Container
+\*-------------------------------------->
+
+<html>
+	<head>
+		<title>Junior Year</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/years.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="cover">
+		<img src="assets/images/cover1.jpg">
+	</div>
+	<div id="content-container">
+		<div class="content" id="button-container">
+			<button id="button-memories">Memories</button>
+			<button id="button-songs">Songs</button>
+		</div>
+		<div class="content hidden" id="memories-container" >
+			<div class="overlay-container">
+				<div class="overlay" id="memories-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#memory5">#5: Head in the Clouds</a></li>
+						<li class="4"><a href="#memory4">#4: Pam Times</a></li>
+						<li class="3"><a href="#memory3">#3: 2020 New Year's Resolution</a></li>
+						<li class="2"><a href="#memory2">#2: Late Nights at the Parker House</a></li>
+						<li class="1"><a href="#memory1">#1: Open Gym Volleyball</a></li>
+					</ul>
+					<button id="memories-exit"> X </button>
+				</div>
+			</div>
+			<div id="memory-items">
+				<div class="item-container" id="memory5">
+					<div class="text-container">
+						<h2>Head in the Clouds<span>05</span></h2>
+						<p> 
+							Coming back to LA from Japan, first thing I did was go to 88Rising’s Head in the Clouds Festival.  Rich Brian and Niki were two artists I became fans of during college, and seeing them perform two of my favorite songs (I Like U and Glow Like Dat) was insane.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/junior/5/1.jpg">
+								<img class= "carousel-img" src="assets/images/junior/5/2.jpg">
+								<img class= "carousel-img" src="assets/images/junior/5/3.jpg">
+								<img class= "carousel-img" src="assets/images/junior/5/4.jpg">
+								<img class= "carousel-img" src="assets/images/junior/5/5.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory4">
+					<div class="text-container">
+						<h2>Pam Times<span>04</span></h2>
+						<p> 
+							Fast forward two years later from when I joined the pam (my big/little thing) and it's grown!  Now I'm the big.  Much love always.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/junior/4/1.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/2.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/3.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/4.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/5.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/6.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/7.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/8.jpg">
+								<img class= "carousel-img" src="assets/images/junior/4/9.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory3">
+					<div class="text-container">
+						<h2>2020 New Year's Resolution<span>03</span></h2>
+						<p> 
+							2020 New Year’s resolutions were pretty standard—one of which being just to make more of an effort to hang out with friends despite the chaos that is going through undergrad.  Back-to-back.  Time for old friends, time for new friends.  Of course, it was cut short with the start of the pandemic, but I'm glad that they're the final memories I have from Berkeley 
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/junior/3/1.jpg">
+								<img class= "carousel-img" src="assets/images/junior/3/2.jpg">
+								<img class= "carousel-img" src="assets/images/junior/3/3.jpg">
+								<img class= "carousel-img" src="assets/images/junior/3/4.jpg">
+								<img class= "carousel-img" src="assets/images/junior/3/5.jpg">
+								<img class= "carousel-img" src="assets/images/junior/3/6.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="item-container" id="memory2">
+					<div class="text-container">
+						<h2>Late Nights at the Parker House<span>02</span></h2>
+						<p> 
+							2am, working on a CS project, one of my roommates turns on the switch and starts playing some Smash Ultimate.  10 minutes later, my other roommate joins in and they start going against each other.
+							</br></br>
+							They hit me with the question, "are you trying to play some Smash?"  
+							</br></br>
+							I look at the work I still have to do, and think to myself "I can play a few games."
+							</br></br>
+							We go to bed at 6am.
+
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/junior/2/1.jpg">
+								<img class= "carousel-img" src="assets/images/junior/2/2.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory1">
+					<div class="text-container">
+						<h2> Open Gym Volleyball<span>01</span></h2>
+						<p> 
+							Something most people don't know about me is that I played on my high school's volleyball team during my senior year.  I wouldn't have considered myself great at the time, but the teammates I had and the fun I had playing games made me want to stick with it.  I remember thinking to myself before I moved to Berkeley that I hope to keep playing.  And after two and a half semesters of saying that I'd go to open gym at the RSF to play volleyball, I finally did it.  
+							</br></br>
+							I remember checking the hours on the RSF website, prepping my gym clothes, going to the courts, and asking if I could hop in.  And just like that, I remebered why I used to enjoy playing volleyball.  
+							</br></br>
+							Dang, was I rusty.  But dang, was this fun.  Playing volleyball was a time where I didn't worry about studying, try to find time to hang out with friends, do something for a club I'm a part of— it was time for myself.  It was something I did purely for the sake of my enjoyment.  Eventually remembering peoples faces, becoming friends, learning from each other, and slowly becoming better at the game was something so satisfactory. 
+							</br></br>
+							While the pandemic cut volleyball to three months for me, once it's safer and gyms are open, I'm determined to keep playing volleyball.
+
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/junior/1/1.jpg">
+								<img class= "carousel-img" src="assets/images/junior/1/2.jpeg">
+								<img class= "carousel-img" src="assets/images/junior/1/3.jpeg">
+								<img class= "carousel-img" src="assets/images/junior/1/4.jpeg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="content hidden" id="songs-container">
+			<div class="overlay-container">
+				<div class="overlay" id="songs-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#song5">#5: I Wish I Missed My Ex</a></li>
+						<li class="4"><a href="#song4">#4: Make It Better</a></li>
+						<li class="3"><a href="#song3">#3: Needy</a></li>
+						<li class="2"><a href="#song2">#2: Midsummer Madness</a></li>
+						<li class="1"><a href="#song1">#1: Love Affair</a></li>
+					</ul>
+					<button id="songs-exit"> X </button>
+				</div>
+			</div>
+			<div id="song-items">
+				<div class="item-container" id="song5">
+					<div class="media-container">
+						<img src="assets/images/junior/songs/5.jpg">
+					</div>
+					<div class="text-container">
+						<h2>I Wish I Missed My Ex<span>05</span></h2>
+						<h3>Mahalia</h3>
+						<p> 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song4">
+					<div class="media-container">
+						<img src="assets/images/junior/songs/4.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Make It Better<span>04</span></h2>
+						<h3>Anderson .Paak ft Smokey Robinson</h3>
+						<p> 
+							  
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song3">
+					<div class="media-container">
+						<img src="assets/images/junior/songs/3.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Needy<span>03</span></h2>
+						<h3>Ariana Grande</h3>
+						<p> 
+							 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song2">
+					<div class="media-container">
+						<img src="assets/images/junior/songs/2.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Midsummer Madness<span>02</span></h2>
+						<h3>88rising</h3>
+						<p> 
+							
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song1">
+					<div class="media-container">
+						<img src="assets/images/junior/songs/1.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Love Affair<span>01</span></h2>
+						<h3>Umi</h3>
+						<p> 
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="assets/scripts/years.js"> </script>
+<script src="assets/scripts/carousel.js"> </script>
+
+</html>
+
