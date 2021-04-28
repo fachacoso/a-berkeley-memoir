@@ -1,0 +1,291 @@
+<!--------------------------------------*\
+  # Table of Contents
+	1. Cover
+	2. Content Container
+		1. Button container
+			1. Memories Button
+			2. Songs Button
+		2. Memories Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Memory Items
+				1. Item Container (x5)
+					1. Text Container
+					2. Media Container
+						1. Image carousel
+							1. Carousel Nav
+							2. Carousel Content
+							3. Carousel Indicator
+		3. Songs Container
+			1. Overlay
+				1. Progress Bar
+				2. Progress Marker
+				3. Progress List
+				4. Exit Button
+			2. Songs Items
+				1. Item Container (x5)
+					1. Media Container
+					2. Text Container
+\*-------------------------------------->
+
+<html>
+	<head>
+		<title>Sophomore Year</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/years.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div id="cover">
+		<img src="assets/images/cover2.jpg">
+		<a href="index.html"> Back to Home </a>
+	</div>
+	<div id="content-container">
+		<div class="content" id="button-container">
+			<button id="button-memories">Memories</button>
+			<button id="button-songs">Songs</button>
+		</div>
+		<div class="content hidden" id="memories-container" >
+			<div class="overlay-container">
+				<div class="overlay" id="memories-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#memory5">#5: League of Legends</a></li>
+						<li class="4"><a href="#memory4">#4: PASS</a></li>
+						<li class="3"><a href="#memory3">#3: Coding</a></li>
+						<li class="2"><a href="#memory2">#2: Nights at Mikaela’s</a></li>
+						<li class="1"><a href="#memory1">#1: Summer in Tokyo</a></li>
+					</ul>
+					<button id="memories-exit"> X </button>
+				</div>
+			</div>
+			<div id="memory-items">
+				<div class="item-container" id="memory5">
+					<div class="text-container">
+						<h2>League of Legends<span>05</span></h2>
+						<p> 
+							This year marks the year I fell in the hole which is known as League of Legends
+							</br> </br>
+							Surprisingly enough, even past sophomore year, League has always been a way for me to keep in touch with friends, make new connections with old friends, make new friends, and have all the good memories that came with it. 
+							</br> </br>
+							</p>
+					</div>
+					<div class="media-container">
+						<img class= "carousel-img active" src="assets/images/sophomore/5/1.png">
+					</div>
+				</div>
+				<div class="item-container" id="memory4">
+					<div class="text-container">
+						<h2>PASS<span>04</span></h2>
+						<p> 
+							Back in high school, PASS was the organization that showed to me that I could succeed in Berkeley.  And two years later, I became one of the leaders in PASS.
+							</br> </br>
+							I was the Public Relations Coordinator, and it was a perfect blend between my creative skills regarding photography and design as well as a platform to help students just like me in my own way.  And throughout my time, I've worked alongside such amazing and passionate individuals to acheive feats and impact others that we could've only acheived together.  Much love to PASS 34!
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/sophomore/4/1.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/2.png">
+								<img class= "carousel-img" src="assets/images/sophomore/4/3.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/4.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/5.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/6.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/7.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/8.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/4/9.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory3">
+					<div class="text-container">
+						<h2>Coding<span>03</span></h2>
+						<p> 
+							print("Hello world")
+							</br> </br>
+							Nearing the end of my first year at Cal, I was panicking because I was going into my second year and I still didn't know what I wanted to major in.  A friend suggested Data Science and I went with it.
+							</br> </br>
+							I took Data 8 and loved the class so much I eventually became a uGSI for the course.  I then took CS61A, which to this date is my favorite class in Berekeley.  Since then, I've been on the "hacking" grind, and will graduate with a Data Science degree May 2021!
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/sophomore/3/1.png">
+								<img class= "carousel-img" src="assets/images/sophomore/3/2.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/3/3.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/3/4.png">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="item-container" id="memory2">
+					<div class="text-container">
+						<h2>Nights at Mikaela’s<span>02</span></h2>
+						<p> 
+							With the chaos that was my sophomore year, I often needed a breather from constant group studying, organization work, and even from going out with friends.
+							</br> </br>
+							In order to get that breather I'd go to my friend Mikaela's apartment.  Almost anytime I'd stop by just to have some company to do whatever.  Maybe to eat, or maybe to watch videos, to chill, to study, to take naps, really anything.  It was a place me and a group of friends could call their second home in Berkeley.
+						</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/sophomore/2/1.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/2/2.png">
+								<img class= "carousel-img" src="assets/images/sophomore/2/3.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-container" id="memory1">
+					<div class="text-container">
+						<h2>Summer in Tokyo<span>01</span></h2>
+						<p> 
+							7:00am Wake up.  7:42am Get on the train.  8:30am Arrive at my internship.  12:00pm Have a quick lunch.  5:30pm get off.  5:45 Get on the train.  6:30pm Arrive at home.  7:00pm Gym with friends.  9:00pm Eat dinner.  10:00pm Relax.  12:00am Sleep.
+							</br></br>
+							A normal day's schedule, but alongside all of that was spontaneous trips, beautiful views, amazing food, and even a surprise climb to the top of Mt. Fuji!
+							</p>
+					</div>
+					<div class="media-container">
+						<div class="carousel-container">
+							<div class="carousel-nav-container">
+								<div class="carousel-nav">
+									<button class = "prev-button hidden">&lt</button>
+									<button class = "next-button">&gt</button>
+								</div>
+							</div>
+							<div class="carousel" data-pos="0">
+								<img class= "carousel-img active" src="assets/images/sophomore/1/1.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/2.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/3.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/4.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/5.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/6.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/7.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/8.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/9.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/10.jpg">
+								<img class= "carousel-img" src="assets/images/sophomore/1/11.jpg">
+							</div>
+							<div class="carousel-indicator-container"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="content hidden" id="songs-container">
+			<div class="overlay-container">
+				<div class="overlay" id="songs-overlay">
+					<div class="progress-bar"></div>
+					<div class="progress-marker"></div>
+					<ul class="progress-list">
+						<li class="5 active"><a href="#song5">#5: On My Mind (acoustic)</a></li>
+						<li class="4"><a href="#song4">#4: Gonna Love Me</a></li>
+						<li class="3"><a href="#song3">#3: The Weekend (Funk Wav Remix)</a></li>
+						<li class="2"><a href="#song2">#2: Fancy</a></li>
+						<li class="1"><a href="#song1">#1: I Like U</a></li>
+					</ul>
+					<button id="songs-exit"> X </button>
+				</div>
+			</div>
+			<div id="song-items">
+				<div class="item-container" id="song5">
+					<div class="media-container">
+						<img src="assets/images/sophomore/songs/5.jpg">
+					</div>
+					<div class="text-container">
+						<h2>On My Mind (acoustic)<span>05</span></h2>
+						<h3>Jorja Smith ft. Preditah</h3>
+						<p> 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song4">
+					<div class="media-container">
+						<img src="assets/images/sophomore/songs/4.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Gonna Love Me<span>04</span></h2>
+						<h3>Teyana Taylor</h3>
+						<p> 
+							  
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song3">
+					<div class="media-container">
+						<img src="assets/images/sophomore/songs/3.jfif">
+					</div>
+					<div class="text-container">
+						<h2>The Weekend (Funk Wav Remix)<span>03</span></h2>
+						<h3>SZA ft Calvin Harris</h3>
+						<p> 
+							 
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song2">
+					<div class="media-container">
+						<img src="assets/images/sophomore/songs/2.jpg">
+					</div>
+					<div class="text-container">
+						<h2>Fancy<span>02</span></h2>
+						<h3>Twice</h3>
+						<p> 
+							
+						</p>
+					</div>
+				</div>
+				<div class="item-container" id="song1">
+					<div class="media-container">
+						<img src="assets/images/sophomore/songs/1.jpg">
+					</div>
+					<div class="text-container">
+						<h2>I Like U<span>01</span></h2>
+						<h3>Niki</h3>
+						<p> 
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="assets/scripts/years.js"> </script>
+<script src="assets/scripts/carousel.js"> </script>
+
+</html>
+
