@@ -34,7 +34,7 @@ window.addEventListener('scroll', function(e) {
     // Changes opacity of cover + buttons
     updateScrollProgress()
     setOpacity(buttons, scrollProgress)
-    setOpacity(background, 1 - scrollProgress)
+    setOpacity(background, 1 - scrollProgress * 1)
 
     // If page on memories or songs view
     if (currView !== "buttons") {
